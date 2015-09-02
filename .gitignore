@@ -55,3 +55,10 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Virtualenv
+/venv*
+
+# Logs
+ghostdriver.log
+
