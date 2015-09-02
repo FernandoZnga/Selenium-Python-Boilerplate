@@ -3,6 +3,10 @@ from selenium import webdriver
 
 
 class TestHeadless(unittest.TestCase):
+    """
+    Basic test case that uses PhantomJS as driver
+    """
+
     def setUp(self):
         self.driver = webdriver.PhantomJS()
 

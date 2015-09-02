@@ -3,6 +3,10 @@ from selenium import webdriver
 
 
 class TestFirefox(unittest.TestCase):
+    """
+    Basic test case that uses firefox as a driver.
+    """
+
     def setUp(self):
         self.driver = webdriver.Firefox()
 
