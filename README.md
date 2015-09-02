@@ -1,6 +1,6 @@
 # Selenium-Python-Boilerplate (Under development)
 
-This is a boilerplate for running selenium tests with python and includes the bare minimum. It includes unittests for both firefox, phantomjs and example on how to work with sensitive data using env values.
+This is a boilerplate for running selenium tests with python and includes the bare minimum. It includes unittests for both firefox, phantomjs and examples on how to work with sensitive data using environment variables.
 
 Implementing this in existing project is easy, just create clone this repro into a folder called selenium (or whaterver) and get going.
 
@@ -18,13 +18,13 @@ This boilerplate requires both selenium, nose and python-dotenv, you can install
 
 This boilerplate includes both PhantomJS and Firefox examples.
 
-- Phantomjs: `brew install phantomjs`
-- Firefox: https://firefox.com
+- Phantomjs: (OSX) `brew install phantomjs`
+- Firefox: Download from https://firefox.com
 
 
 ### Environment values
 
-Create a .env file (that will be kept outside version control): `cp example.env .env`
+Create a .env file (this will be kept outside version control): `cp example.env .env`
 
 
 ## Running
