@@ -18,8 +18,8 @@ This boilerplate requires both selenium and nose, you can install them by doing 
 
 This boilerplate includes both PhantomJS and Firefox examples.
 
-Phantomjs: `brew install phantomjs`
-Firefox: https://firefox.com
+- Phantomjs: `brew install phantomjs`
+- Firefox: https://firefox.com
 
 
 ## Running
