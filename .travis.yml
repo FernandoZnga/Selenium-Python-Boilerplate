@@ -3,5 +3,7 @@ python:
  - "2.7"
 install:
  - pip install -r requirements.txt
-script:
+before_script:
+- cp example.env .env
+scrip:
  - python runtests.py
