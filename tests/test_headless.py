@@ -9,6 +9,7 @@ class TestHeadless(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.PhantomJS()
+        self.driver.set_window_size(1024, 768)
 
     def test_title(self):
         self.driver.get("http://www.tomwaits.com")
