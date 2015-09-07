@@ -2,6 +2,7 @@ import os
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from pyvirtualdisplay import Display
 
 
 class TestEnvArgs(unittest.TestCase):
@@ -10,10 +11,12 @@ class TestEnvArgs(unittest.TestCase):
     """
 
     def setUp(self):
+        self.display = Display(visible=0, size=(1024, 768))
+        self.display.start()
+
         self.driver = webdriver.Firefox()
 
     def test_env_var_google_search(self):
-        print("Oh hi!")
         search_term = os.environ.get("SEARCH_TERM", "test")
 
         self.driver.get("https://google.com")
@@ -24,3 +27,4 @@ class TestEnvArgs(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
+        self.display.stop()
