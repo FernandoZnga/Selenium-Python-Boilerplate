@@ -15,9 +15,9 @@ class TestHeadless(unittest.TestCase):
         self.driver.get("http://www.tomwaits.com")
         self.assertEquals("Tom Waits", self.driver.title)
 
-    def test_url(self):
-        self.driver.get("http://www.tomwaits.com")
-        self.assertEquals(self.driver.current_url, "http://www.tomwaits.com/")
+    #def test_url(self):
+        #self.driver.get("http://www.tomwaits.com")
+        #self.assertEquals(self.driver.current_url, "http://www.tomwaits.com/")
 
     def tearDown(self):
         self.driver.quit()
