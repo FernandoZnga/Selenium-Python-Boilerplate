@@ -1,4 +1,5 @@
 import unittest
+from pyvirtualdisplay import Display
 from selenium import webdriver
 
 
@@ -8,6 +9,9 @@ class TestFirefox(unittest.TestCase):
     """
 
     def setUp(self):
+        self.display = Display(visible=0, size=(1024, 768))
+        self.display.start()
+
         self.driver = webdriver.Firefox()
 
     def test_title(self):
@@ -20,3 +24,4 @@ class TestFirefox(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
+        self.display.stop()
