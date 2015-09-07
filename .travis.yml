@@ -4,6 +4,6 @@ python:
 install:
  - pip install -r requirements.txt
 before_script:
-- cp example.env .env
-scrip:
+ - cp example.env .env
+script:
  - python runtests.py
