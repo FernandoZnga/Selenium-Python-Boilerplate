@@ -1,0 +1,9 @@
+machine:
+    python:
+        version: 2.7
+
+test:
+    pre:
+        - cp example.env .env
+    override:
+        - python runtests.py
